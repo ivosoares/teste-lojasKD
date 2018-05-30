@@ -1,6 +1,6 @@
 <template>
     <div class="product-container">
-        {{ counter }}        
+        <p>{{counter}}</p>
         <section class="product">
             <div class="image-container">
                 <img src="../assets/images/Group.png" alt="Product Image">
@@ -49,7 +49,6 @@
             <p></p>
             <p></p>
         </section>
-        
     </div>
 </template>
 <script>
@@ -57,5 +56,5 @@ export default {
   data: () => ({
     counter: 1
   })
-};
+}
 </script>
