@@ -6,7 +6,7 @@
         </nav>
         <img class="menu-img" src="../../assets/images/logo-lojaskd.png" alt="Logo Lojaskd">
         <div class="menu-icons">
-            <a href="" class="wish-marker" data-count="12"><i class="fas fa-heart"></i></a>
+            <a href="" class="wish-marker" :data-count='this.wish'><i class="fas fa-heart"></i></a>
             <a href=""><i class="fas fa-user"></i></a>
             <a href=""><i class="fas fa-shopping-cart"></i></a>
         </div>
@@ -22,8 +22,19 @@
     </header>
 </template>
 <script>
+import eventbus from '../../utils/events/eventbus'
 export default {
+  data () {
+    return {
+      wish: 0
+    }
+  },
+  created () {
+    eventbus.$on('sendwish', 
+    function(num) {
+        this.wish = num
+        return num
+    }.bind(this))
+  }
 }
 </script>
-<style lang="scss">
-</style>

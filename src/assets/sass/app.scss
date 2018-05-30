@@ -1,9 +1,11 @@
-
 * {
   box-sizing: border-box;
 }
 body {
   font-family: Roboto, sans-serif;
+}
+p{
+  margin: 0px;
 }
 a {
   text-decoration: none;
@@ -106,6 +108,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5%;
   
 }
 .view .results {
@@ -137,10 +140,6 @@ a {
   padding: 3px 9px;
   font-size: 18px;
 }
-.view .view-mode a:hover {
-  border-color: #0288d1;
-  color: #0288d1;
-}
 .product-container {
   display: flex;
   /* flex-direction: column; */
@@ -151,15 +150,92 @@ a {
 }
 .product {
   width: 100%;
-  display: flex;
+  display: block;
+}
+.product-grid{
+  width: 48%;
 }
 .grid {
   width: 48%;
 }
 .image-container {
   width: 100%;
+  position: relative;
+}
+.image-container .tag {
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  color: #424242;
+  background: #FFCA28;
+  border-radius: 8px;
+  width: 64px;
+  height: 15px;
+  position: absolute;
+	top: 0%;
+	left: 4%;
 }
 .image-container img {
   width: 100%;
   max-width: 300px;
+}
+.wishlist{
+  display: none;
+}
+.wish-button {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  width: 40px;
+  height: 40px;
+  background: #F2F2F2;
+  box-shadow: 0px 0px 150px rgba(117, 117, 117, 0.15);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.wish-button a {
+  font-size: 18px;
+  color: #424242;
+}
+.wish-button:hover{
+  width: 170px;
+  justify-content: center;
+  padding-left: 3%;
+}
+.wish-button:hover .wishlist {
+ display: block;
+ padding-right: 5%;
+}
+.product-list .image-container{
+  width: 40%;
+  display: inline-block;
+}
+.product-list .product-info {
+  width: 58%;
+  display: inline-block;
+  vertical-align: top;
+}
+.product-list .product-info > p {
+  font-size: 14px;
+  color: #757575;
+}
+.product-list .product-info .price{
+  font-size: 16px;
+  color: #000000;
+}
+.active {
+  border-color: #0288d1 !important;
+	color: #0288d1;
+}
+.add-wish {
+  background: #0288D1;
+  box-shadow: 0px 0px 8px rgba(66, 66, 66, 0.15);
+  border-radius: 50px;
+}
+.add-wish {
+  p{color: #FFF}
+  a{color: #FFF}
 }
