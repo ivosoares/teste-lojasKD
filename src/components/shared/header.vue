@@ -4,7 +4,7 @@
         <nav class="menu-button">
             <a href=""><i class="fas fa-bars"></i></a>
         </nav>
-        <img class="menu-img" src="assets/images/logo-lojaskd.png" alt="Logo Lojaskd">
+        <img class="menu-img" src="../../assets/images/logo-lojaskd.png" alt="Logo Lojaskd">
         <div class="menu-icons">
             <a href="" class="wish-marker" data-count="12"><i class="fas fa-heart"></i></a>
             <a href=""><i class="fas fa-user"></i></a>

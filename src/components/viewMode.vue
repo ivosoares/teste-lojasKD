@@ -5,9 +5,9 @@
       </header>
       <div class="view-mode">
         <p>Modo de exibição:</p>
-        <div><i class="fas fa-square"></i></div>
-        <div><i class="fas fa-list-ul"></i></div>
-        <div><i class="fas fa-th"></i></div>
+        <a><i class="fas fa-square"></i></a>
+        <a><i class="fas fa-list-ul"></i></a>
+        <a><i class="fas fa-th"></i></a>
       </div>
     </section>
 </template>
