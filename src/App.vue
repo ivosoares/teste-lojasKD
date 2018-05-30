@@ -1,28 +1,21 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+  <div id="app" class="container">
+    <Header/>
+    <ViewMode/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-
+import Header from './components/shared/header.vue'
+import ViewMode from './components/viewMode.vue'
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    Header,
+    ViewMode
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import 'assets/sass/app.scss'
 </style>
